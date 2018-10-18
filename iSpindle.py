@@ -42,14 +42,14 @@ PORT = 9501  # TCP Port to listen to (to be used in iSpindle config as well)
 HOST = '0.0.0.0'  # Allowed IP range. Leave at 0.0.0.0 to allow connections from anywhere
 
 # CSV
-CSV = 0  # Set to 1 if you want CSV (text file) output
-OUTPATH = '/home/pi/iSpindel/csv/'  # CSV output file path; filename will be name_id.csv
+CSV = 1  # Set to 1 if you want CSV (text file) output
+OUTPATH = '/root/ispindle/csv/'  # CSV output file path; filename will be name_id.csv
 DELIMITER = ';'  # CSV delimiter (normally use ; for Excel)
 NEWLINE = '\r\n'  # newline (\r\n for windows clients)
 DATETIME = 1  # Leave this at 1 to include Excel compatible timestamp in CSV
 
 # MySQL
-SQL = 1  # 1 to enable output to MySQL database
+SQL = 0  # 1 to enable output to MySQL database
 SQL_HOST = '127.0.0.1'  # Database host name (default: localhost - 127.0.0.1 loopback interface)
 SQL_DB = 'iSpindle'  # Database name
 SQL_TABLE = 'Data'  # Table name
